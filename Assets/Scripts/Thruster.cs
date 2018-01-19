@@ -9,7 +9,7 @@ public class Thruster : MonoBehaviour {
 	float thrusterPower = 10f;
 
 	void Start(){
-		rb = this.transform.root.GetComponent<Rigidbody> ();
+		rb = this.transform.root.GetChild(0).GetComponent<Rigidbody> ();
 	}
 
 	void FixedUpdate(){
